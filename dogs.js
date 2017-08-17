@@ -32,9 +32,9 @@ btn.onclick = () => {
           }, '<ul>');
           
           //add closing tag
-        	content += '</ul>';
+          content += '</ul>';
         }
-    	}
+      }
     }
     
     //add closing tag
