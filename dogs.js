@@ -8,7 +8,7 @@ btn.onclick = () => {
     return;
   }
 
-	//get the JSON from the api
+  //get the JSON from the api
   const url = 'https://dog.ceo/api/breeds/list/all';
   fetch(url).then(response => {
   	
@@ -19,7 +19,7 @@ btn.onclick = () => {
     let content = '<ol>';
     for (let key in response.message) {
     
-    	//make sure we don't fuck with javascript's prototype properties
+    	//make sure we don't use javascript's prototype properties
     	if (response.message.hasOwnProperty(key)) {
       
         //create html string with breed and append to content
