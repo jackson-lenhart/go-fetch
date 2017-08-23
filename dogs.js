@@ -11,7 +11,6 @@ btn.onclick = () => {
   //get the JSON from the api
   const url = 'https://dog.ceo/api/breeds/list/all';
   fetch(url).then(response => {
-  	
     return response.json();
   }).then(response => {
   	loaded = true;
